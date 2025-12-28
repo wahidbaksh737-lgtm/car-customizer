@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Customizer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sliding Background -->
+    <div class="slider">
+        <img src="images/bg1.jpg" class="slide active">
+        <img src="images/bg2.jpg" class="slide">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Customize Your Car</h1>
+    </section>
+
+    <!-- Car Modification Section -->
+    <section class="car-mod">
+        <img src="images/car.png" id="car">
+        <div class="parts">
+            <img src="images/wheel.png" onclick="updateCost('wheel')" title="Wheel">
+            <img src="images/spoiler.png" onclick="updateCost('spoiler')" title="Spoiler">
+        </div>
+    </section>
+
+    <!-- Cost Calculator -->
+    <section class="calculator">
+        <h2>Total Cost: <span id="total">$0</span></h2>
+    </section>
+
+    <script src="js/slider.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
